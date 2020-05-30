@@ -27,16 +27,13 @@ namespace NetCoreCsharpFormsApp
             //DoSomeHecticWork();
             //5 WAYS TO CALL A THREAD
             Thread mythread1 = new Thread(DoSomeHecticWork);
-
-            //Thread mythread2 = new Thread(new ThreadStart(DoSomeHecticWork));
-
-            //Thread mythread3 = new Thread(delegate () { DoSomeHecticWork(); });
-
-            //Thread mythread4 = new Thread(() => DoSomeHecticWork() );
-
-            //Class2 obj = new Class2();
-            //Thread mythread5 = new Thread(obj.DoSomeHecticWork2);
-
+            /*
+            Thread mythread2 = new Thread(new ThreadStart(DoSomeHecticWork));
+            Thread mythread3 = new Thread(delegate () { DoSomeHecticWork(); });
+            Thread mythread4 = new Thread(() => DoSomeHecticWork());
+            Class2 obj = new Class2();
+            Thread mythread5 = new Thread(obj.DoSomeHecticWork2);
+            */
             mythread1.Start();
 
             //NOT REQUIRED SINCE CALLED IN THREAD
@@ -54,7 +51,6 @@ namespace NetCoreCsharpFormsApp
             {
                 listBox1.Items.Add(i);
             }
-
         }
     }
 
